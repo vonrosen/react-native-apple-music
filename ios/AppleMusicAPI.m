@@ -5,6 +5,8 @@
 @interface RCT_EXTERN_MODULE(AppleMusicAPI, NSObject)
 
 //Api initialization
+RCT_EXTERN_METHOD(getUserTokenValue:   (RCTPromiseResolveBlock)resolve
+                                                        reject:(RCTPromiseRejectBlock)reject)
 RCT_EXTERN_METHOD(setValsAndInit:   (NSString)keyID
                                     devTeamID:(NSString)devTeamID
                                     privateKey:(NSString)privateKey)

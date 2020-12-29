@@ -1,7 +1,7 @@
 {
-  "name": "@bouncyapp/react-native-apple-music",
+  "name": "@vonrosen/react-native-apple-music",
   "title": "React Native Apple Music",
-  "version": "1.0.3",
+  "version": "1.1.40",
   "description": "A react native module for the Apple Music API",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Lemonadd-UG/react-native-apple-music.git",
-    "baseUrl": "https://github.com/Lemonadd-UG/react-native-apple-music"
+    "url": "git+ssh://git@github.com/vonrosen/react-native-apple-music.git",
+    "baseUrl": "https://github.com/vonrosen/react-native-apple-music"
   },
   "keywords": [
     "react-native",
@@ -24,16 +24,19 @@
   "author": "Bouncy",
   "license": "MIT",
   "licenseFilename": "LICENSE",
-  "peerDependencies": {
-    "react": "^16.8.1",
-    "react-native": ">=0.60.0-rc.0 <1.0.x"
-  },
   "devDependencies": {
     "react": "^16.9.0",
     "react-native": "^0.61.5"
   },
-  "bugs": {
-    "url": "https://github.com/Lemonadd-UG/react-native-apple-music/issues"
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-native": "^0.61.5"
   },
-  "homepage": "https://github.com/Lemonadd-UG/react-native-apple-music#readme"
+  "bugs": {
+    "url": "https://github.com/vonrosen/react-native-apple-music/issues"
+  },
+  "homepage": "https://github.com/vonrosen/react-native-apple-music#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/vonrosen"
+  }
 }

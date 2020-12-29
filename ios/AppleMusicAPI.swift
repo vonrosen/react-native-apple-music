@@ -32,6 +32,10 @@ class AppleMusicAPI: NSObject {
     private var controller: SKCloudServiceController = SKCloudServiceController()
     private var musicLibraryPermissionGranted: Bool?
 
+    @objc
+    public func getUserTokenValue(_ resolve: @escaping RCTPromiseResolveBlock, reject: @escaping RCTPromiseRejectBlock) {
+        resolve(self.userToken);
+    }
 
     @objc
     public func isInitialized(_ callback: @escaping RCTResponseSenderBlock) {
@@ -78,6 +82,8 @@ class AppleMusicAPI: NSObject {
             getUserToken { result, status in
                 if (status == 420) {
                     self.client = CiderClient(storefront: .germany, developerToken: self.devToken!, userToken: self.userToken!)
+                    resolve(status)
+                    return;
                 }
                 reject("error", "Error retrieving user token", AppleMusicApiError.init(id: status))
             }

@@ -5,6 +5,8 @@ const AppleMusic = NativeModules.AppleMusicAPI;
 
 if (Platform.OS == 'ios') {
 
+  AppleMusic.getUserMusicToken = AppleMusic.getUserTokenValue
+
   AppleMusic.initialize = AppleMusic.setValsAndInit
 
   AppleMusic.login_basic = AppleMusic.initClientWithDevToken
